@@ -285,3 +285,39 @@
 #         selector = outdict[number % 10]
 #
 #     return f'{number} {words[selector]}'
+
+
+# Функция get_biggest()
+
+# def get_biggest(numbers):
+#     # if not numbers:
+#     #     return -1
+#     nums = [str(el) for el in numbers]
+#     m_len = len(max(nums))
+#     print(m_len)
+    # x = list(sorted(nums, key=max))
+    # print(x)
+    # number = []
+    # while len(nums) != 0:
+    #     number.append(max(nums))
+    #     del nums[nums.index(max(nums))]
+    #
+    # return ''.join(number)
+
+
+# def get_biggest(numbers):
+#     if not numbers:
+#         return -1
+#     # return ''.join(sorted([str(el) for el in numbers], reverse=True))
+#     return ''.join(sorted((str(el) for el in numbers), reverse=True))
+
+# print(get_biggest([1, 2, 3]))
+# print(get_biggest([]))
+# print(get_biggest([61, 228, 9, 3, 11]))
+# print(get_biggest([7, 71, 72]))
+
+
+
+
+
+
