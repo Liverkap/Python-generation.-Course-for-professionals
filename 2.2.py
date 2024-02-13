@@ -95,10 +95,42 @@
 
 
 
+# БОЛЕЕ ОДНОГО
 
+# numbers = [int(num) for num in input().split()]
+#
+# new_list = []
+# for el in numbers:
+#     if numbers.count(el) > 1 and el not in new_list:
+#         new_list.append(el)
+#
+# print(*sorted(new_list))
 
+# БОЛЕЕ ОДНОГО (ЕЩЕ ВАРИАНТ)
+# numbers = [int(num) for num in input().split()]
+# nums = list(filter(lambda x: numbers.count(x) > 1, set(numbers)))
+# print(*sorted(nums))
+#
+# # БОЛЕЕ ОДНОГО (ОТ ПРЕПОДАВАТЕЛЯ)
+# nums = [int(i) for i in input().split()]
+# print(*sorted(filter(lambda i: nums.count(i) > 1, set(nums))))
+#
+# # БОЛЕЕ ОДНОГО (ОТ ПОЛЬЗОВАТЕЛЯ)
+# d = {}
+# for _ in map(int, input().split()):
+#     d[_] = d.get(_, 0) + 1
+# print(*sorted(list(filter(lambda x: d[x] > 1, d.keys()))))
 
+# # БОЛЕЕ ОДНОГО (ОТ ПОЛЬЗОВАТЕЛЯ)
+# nums = list(map(int, input().split()))
+# print(*set(i for i in nums if nums.count(i) > 1))
 
+# # БОЛЕЕ ОДНОГО (ОТ ПОЛЬЗОВАТЕЛЯ)(ЧЕРЕЗ СЛОВАРЬ)
+# nums = {}
+# for num in map(int, input().split()):
+#     nums[num] = nums.get(num, 0) + 1
+#
+# print(*sorted([k for k, v in nums.items() if v > 1]))
 
 
 
