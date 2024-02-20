@@ -215,4 +215,35 @@
 # Примечание 7. По умолчанию объекты типов date и time выводятся в ISO 8601 формате
 
 
+# **********
+# импортируем тип date из модуля datetime
+# from datetime import date
+
+# выводим текущую дату
+# print(date.today())
+
+
+# ***********
+# # импортируем тип date из модуля datetime
+# from datetime import date
+#
+# # создаем объект, соответсвующий дате урагана
+# hurricane_andrew = date(1992, 8, 24)
+#
+# # выводим день недели
+# print(hurricane_andrew.weekday())
+
+# ********
+# # счетчик для нужного количества ураганов
+# early_hurricanes = 0
+#
+# # цикл по датам в которые был ураган
+# for hurricane in florida_hurricane_dates:
+#     # если месяц урагана меньше чем июнь (порядковый номер 6)
+#     if hurricane.month < 6:
+#         early_hurricanes += 1
+#
+# print(early_hurricanes)
+
+
 
